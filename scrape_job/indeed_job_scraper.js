@@ -9,7 +9,7 @@ import indeed_job_urls from "../job_urls/indeed_job_urls.json" assert { type: "j
     await page.goto(job.url);
 
     const job_title = await page.textContent(
-      'h1[class*="jobsearch-JobInfoHeader-title"]'
+      'span[id*="jobTitle-2b51645d8ce7d858"]'
     );
 
     // Select the <a> tag and extract the href attribute and text content
@@ -39,5 +39,5 @@ import indeed_job_urls from "../job_urls/indeed_job_urls.json" assert { type: "j
 
   console.log(data);
 
-  // await browser.close();
+  await browser.close();
 })();
