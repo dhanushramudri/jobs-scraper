@@ -1,5 +1,7 @@
 import { chromium } from "playwright";
 import greenhouse_job_urls from "../job_urls/greenhouse_job_urls.json" assert { type: "json" };
+import searchResults from "../searchResults.json" assert { type: "json" };
+
 import slugify from "slugify";
 import fs from "fs";
 import greenhouse_data from "../jobs_data/greenhouse_jobs_data.json" assert { type: "json" };
